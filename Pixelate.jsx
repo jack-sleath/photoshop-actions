@@ -10,6 +10,8 @@ if (isNaN(numColors) || numColors < 2 || numColors > 256) {
     throw new Error("Invalid colour count");
 }
 
+numColors++;
+
 // Remember original settings
 var origDoc   = app.activeDocument;
 var origPrefs = app.preferences.rulerUnits;
