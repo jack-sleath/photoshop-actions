@@ -72,9 +72,6 @@ app.activeDocument = origDoc;
 var newLayer = origDoc.paste();
 newLayer.name = "Pixelated × " + numColors;
 
-// Trim away any border that matches the top-left pixel (white)
-origDoc.trim(TrimType.TOPLEFT, true, true, true, true);
-
 // Clean up
 tmpDoc.close(SaveOptions.DONOTSAVECHANGES);
 app.preferences.rulerUnits = origPrefs;
